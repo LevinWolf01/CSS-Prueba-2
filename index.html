@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas Alineadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Tablas con Diferentes Alineaciones y Colores</h1>
+
+        <!-- Tabla 1 - Amarilla - Izquierda -->
+        <div class="tabla-contenedor tabla-izquierda">
+        <table class="tabla-amarilla">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Departamento</th>
+                    <th>Posición</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Fecha</th>
+                    <th>Salario</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3"><img src="https://picsum.photos/id/64/60/60" alt="Carlos"></td>
+                    <td colspan="2"><strong>001 - Carlos</strong></td>
+                    <td colspan="2"><strong>Ramírez</strong></td>
+                    <td colspan="2">TI</td>
+                    <td>Desarrollador Senior</td>
+                    <td colspan="2">carlos.ramirez@empresa.com</td>
+                    <td class="activo">Activo</td>
+                </tr>
+                <tr>
+                    <td colspan="7">Email: carlos.ramirez@empresa.com | Teléfono: 555-1234</td>
+                    <td colspan="2">2022-03-15</td>
+                    <td>$4,800</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Nota:</strong> Trabajador Senior</td>
+                    <td colspan="6">Contacto para proyectos críticos</td>
+                </tr>
+                <tr>
+                    <td><img src="https://picsum.photos/id/65/60/60" alt="María"></td>
+                    <td>002</td>
+                    <td colspan="2"><strong>María López</strong></td>
+                    <td colspan="2">Marketing</td>
+                    <td colspan="2">Gerente de Marca</td>
+                    <td colspan="2">maria.lopez@empresa.com</td>
+                    <td class="activo">Activo</td>
+                </tr>
+                <tr>
+                    <td><img src="https://picsum.photos/id/66/60/60" alt="Juan"></td>
+                    <td>003</td>
+                    <td colspan="2"><strong>Juan Pérez</strong></td>
+                    <td colspan="2">Finanzas</td>
+                    <td colspan="2">Contador</td>
+                    <td colspan="2">juan.perez@empresa.com</td>
+                    <td class="activo">Activo</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <!-- Tabla 2 - Azul - Centro -->
+        <div class="tabla-contenedor tabla-centro">
+        <table class="tabla-azul">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Departamento</th>
+                    <th>Posición</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Fecha</th>
+                    <th>Salario</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://picsum.photos/id/64/60/60" alt="Carlos"></td>
+                    <td>001</td>
+                    <td colspan="2"><strong>Carlos Ramírez</strong></td>
+                    <td>TI</td>
+                    <td colspan="2">Desarrollador Senior</td>
+                    <td colspan="2">carlos.ramirez@empresa.com</td>
+                    <td>2022-03-15</td>
+                    <td class="activo">Activo</td>
+                </tr>
+                <tr>
+                    <td><img src="https://picsum.photos/id/65/60/60" alt="María"></td>
+                    <td>002</td>
+                    <td colspan="2"><strong>María López</strong></td>
+                    <td>Marketing</td>
+                    <td colspan="2">Gerente de Marca</td>
+                    <td colspan="2">maria.lopez@empresa.com</td>
+                    <td>2021-11-20</td>
+                    <td class="activo">Activo</td>
+                </tr>
+                <tr>
+                    <td><img src="https://picsum.photos/id/66/60/60" alt="Juan"></td>
+                    <td>003</td>
+                    <td colspan="2"><strong>Juan Pérez</strong></td>
+                    <td>Finanzas</td>
+                    <td colspan="2">Contador</td>
+                    <td colspan="2">juan.perez@empresa.com</td>
+                    <td>2023-01-10</td>
+                    <td class="activo">Activo</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <!-- Tabla 3 - Roja - Derecha -->   
+        <div class="tabla-contenedor tabla-derecha">
+        <table class="tabla-roja">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Departamento</th>
+                    <th>Posición</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Fecha</th>
+                    <th>Salario</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3"><img src="https://picsum.photos/id/64/60/60" alt="Carlos"></td>
+                    <td>001</td>
+                    <td colspan="3"><strong>Carlos Ramírez | TI</strong></td>
+                    <td colspan="2">Desarrollador Senior</td>
+                    <td colspan="2">555-1234</td>
+                    <td>2022-03-15</td>
+                    <td class="activo">Activo</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Email</td>
+                    <td colspan="7">carlos.ramirez@empresa.com</td>
+                    <td>$4,800</td>
+                </tr>
+                <tr>
+                    <td colspan="9">Departamento: TI | Posición: Desarrollador Senior</td>
+                    <td>Activo</td>
+                </tr>
+                <tr>
+                    <td><img src="https://picsum.photos/id/65/60/60" alt="María"></td>
+                    <td>002</td>
+                    <td colspan="3"><strong>María López | Marketing</strong></td>
+                    <td colspan="2">Gerente de Marca</td>
+                    <td colspan="2">555-5678</td>
+                    <td>2021-11-20</td>
+                    <td class="activo">Activo</td>
+                </tr>
+                <tr>
+                    <td><img src="https://picsum.photos/id/66/60/60" alt="Juan"></td>
+                    <td>003</td>
+                    <td colspan="3"><strong>Juan Pérez | Finanzas</strong></td>
+                    <td colspan="2">Contador</td>
+                    <td colspan="2">555-9012</td>
+                    <td>2023-01-10</td>
+                    <td class="activo">Activo</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <footer>
+            <p>Total de registros por tabla: 3 | Fecha: 11 de mayo de 2026</p>
+            <p>&copy; 2026 Empresa XYZ</p>
+        </footer>
+    </div>
+
+
+    <h2 class="ej1">Ejemplo de Tablas con Estilos Personalizados 1</h2>
+    <h2 class="ej2">Ejemplo de Tablas con Estilos Personalizados 2</h2>
+    <h2 class="ej3">Ejemplo de Tablas con Estilos Personalizados 3</h2>
+    <h2 class="ej4">Ejemplo de Tablas con Estilos Personalizados 4</h2>
+    <h2 class="ej5">Ejemplo de Tablas con Estilos Personalizados 5</h2>
+    <h2 class="ej6">Ejemplo de Tablas con Estilos Personalizados 6</h2>
+    <h2 class="ej7">Ejemplo de Tablas con Estilos Personalizados 7</h2>
+    <h2 class="ej8">Ejemplo de Tablas con Estilos Personalizados 8</h2>
+    <h2 class="ej9">Ejemplo de Tablas con Estilos Personalizados 9</h2>
+    <h2 class="ej10">Ejemplo de Tablas con Estilos Personalizados 10</h2>
+    <h2 class="ej11">Ejemplo de Borde multiple</h2>
+    <h2 class="ej12"> Ejemplo de BORDER </h2>
+
+    <div class="Fondo_Natural">
+        <div class="cuyito">
+            <div class="pastito"></div>
+        </div>
+    </div>
+</body>
+</html>

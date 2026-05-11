@@ -1,0 +1,278 @@
+/* ================================================================
+   ESTILOS GLOBALES - RESET Y CONFIGURACIÓN GENERAL
+   ================================================================ */
+
+* {
+    margin: 10;
+    padding: 5px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #c5c5c5;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ================================================================
+   CONTENEDOR PRINCIPAL Y ENCABEZADO
+   ================================================================ */
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+    background-image: url('');
+    background-size: 64%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 2.2rem;
+    grid-column: 1 / -1;
+}
+
+/* Estilo base para todos los h2 con clase ej */
+h2[class^="ej"] {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/072/498/133/small/a-glowing-pink-flower-stands-out-in-a-tranquil-dark-blue-mystical-field-photo.jpg');
+    background-repeat: no-repeat; /* Para apreciar mejor el tamaño real */
+    height: 150px; /* Altura fija para que el fondo sea visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ej1 {
+    border-style: solid;
+    border-color: #0859ab rgb(246, 9, 9) rgb(252, 181, 2);
+    border-radius: 100px 5px;
+    background-size: cover; /* CUBRE TODO EL ESPACIO */
+}
+
+.ej2 {
+    border-style: dotted;
+    border-radius: 50px;
+    background-size: contain; /* SE VE TODA LA IMAGEN */
+}
+
+.ej3 {
+    border-style: dashed;
+    background-size: auto; /* TAMAÑO ORIGINAL (MUY GRANDE) */
+}
+
+.ej4 {
+    border-style: double;
+    background-position: center; /* CENTRADO */
+    background-size: auto; 
+}
+
+.ej5 {
+    border-style: groove;
+    background-size: 50px; /* TAMAÑO FIJO EN PIXELES */
+}
+
+.ej6 {
+    border-style: ridge;
+    background-size: 15%; /* EL 15% DEL ANCHO DEL H2 */
+}
+
+.ej7 {
+    border-style: inset;
+    background-size: inherit; /* HEREDA DEL CONTENEDOR PADRE, pero en este caso, él es el contenedor padre : */
+}
+
+.ej8 {
+    border-style: outset;
+    background-size: revert; /* VUELVE AL VALOR DEL NAVEGADOR */
+}
+
+.ej9 {
+    border-style: none;
+    background-size: unset; /* ELIMINA EL VALOR APLICADO */
+}
+
+.ej10 {
+    border-style: hidden;
+    background-size: initial; /* VALOR INICIAL DE LA PROPIEDAD */
+}
+
+/* Mantengo tus otros estilos de borde abajo */
+.ej11 {
+    border-style: solid inset groove dashed;
+}
+
+.ej12 {
+    border: solid firebrick;
+    border-width: 25px 5px 10px 12px;
+}
+
+.Fondo_Natural {
+    border: #03ff2d 5px solid;
+    border-radius: 15px;
+    background-image: url(./src/visual/Fondo\ Natural.jpg);
+    background-size: auto;
+}
+
+.cuyito {
+    background-image: url(./src/visual/cuyito.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+}
+.pastito {
+    background-image: url(./src/visual/pastito.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    z-index: 1;
+}
+/* ================================================================
+   CONTENEDORES DE TABLAS - ALINEACIÓN HORIZONTAL (Sin Flex)
+   ================================================================ */
+
+/* Tabla alineada a la IZQUIERDA */
+.tabla-izquierda {
+    text-align: left;
+    padding-right: 10px;
+    
+}
+
+/* Tabla alineada al CENTRO */
+.tabla-centro {
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* Tabla alineada a la DERECHA */
+.tabla-derecha {
+    text-align: right;
+    padding-left: 10px;
+}
+
+/* Contenedor general para tablas con barra de desplazamiento */
+.tabla-contenedor {
+    overflow-x: auto;
+    max-width: 100%;
+    display: block;
+}
+
+/* ================================================================
+   ESTILOS DE TABLAS - ESTRUCTURA Y APARIENCIA
+   ================================================================ */
+
+table {
+    width: 100%;
+    min-width: 350px;
+    border-collapse: collapse;
+    border: 2px solid #999;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px 12px;
+    text-align: left;
+    border: 1px solid #bbb;
+    font-size: 0.95rem;
+}
+
+td img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+/* ================================================================
+   TEMAS DE COLOR PARA LAS TABLAS
+   ================================================================ */
+
+/* TABLA 1: AMARILLA */
+.tabla-amarilla thead {
+    background-color: #fdca00;
+    color: #2c3e50;
+}
+
+.tabla-amarilla tr {
+    background-color: #fff9e6;
+}
+
+/* TABLA 2: AZUL */
+.tabla-azul thead {
+    background-color: #00538a;
+    color: white;
+}
+
+.tabla-azul tr {
+    background-color: #ebf3fb;
+}
+
+/* TABLA 3: ROJA */
+.tabla-roja thead {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.tabla-roja tr {
+    background-color: #fdf2f2;
+}
+
+/* ================================================================
+   ESTILOS DE ESTADO Y FOOTER
+   ================================================================ */
+
+/* Estados de activo/inactivo */
+.activo {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.inactivo {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* ================================================================
+   RESPONSIVE - Estilos para pantallas más pequeñas
+   ================================================================ */
+
+@media (max-width: 768px) {
+    body { padding: 10px; }
+    .container { padding: 15px; }
+    table { max-width: 100%; }
+    td img { width: 45px; height: 45px; }
+}
