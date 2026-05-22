@@ -6,12 +6,16 @@
     margin: 10;
     padding: 5px;
     box-sizing: border-box;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #c5c5c5;
+    background-image: url(./src/Visual-background.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed    ;
     line-height: 1.6;
     padding: 20px;
 }
@@ -23,7 +27,7 @@ body {
 .container {
     max-width: 1600px;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgba(2, 4, 124, 0.667);
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -38,7 +42,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: white;
     font-size: 2.2rem;
     grid-column: 1 / -1;
 }
@@ -53,99 +57,6 @@ h2[class^="ej"] {
     justify-content: center;
 }
 
-.ej1 {
-    border-style: solid;
-    border-color: #0859ab rgb(246, 9, 9) rgb(252, 181, 2);
-    border-radius: 100px 5px;
-    background-size: cover; /* CUBRE TODO EL ESPACIO */
-}
-
-.ej2 {
-    border-style: dotted;
-    border-radius: 50px;
-    background-size: contain; /* SE VE TODA LA IMAGEN */
-}
-
-.ej3 {
-    border-style: dashed;
-    background-size: auto; /* TAMAÑO ORIGINAL (MUY GRANDE) */
-}
-
-.ej4 {
-    border-style: double;
-    background-position: center; /* CENTRADO */
-    background-size: auto; 
-}
-
-.ej5 {
-    border-style: groove;
-    background-size: 50px; /* TAMAÑO FIJO EN PIXELES */
-}
-
-.ej6 {
-    border-style: ridge;
-    background-size: 15%; /* EL 15% DEL ANCHO DEL H2 */
-}
-
-.ej7 {
-    border-style: inset;
-    background-size: inherit; /* HEREDA DEL CONTENEDOR PADRE, pero en este caso, él es el contenedor padre : */
-}
-
-.ej8 {
-    border-style: outset;
-    background-size: revert; /* VUELVE AL VALOR DEL NAVEGADOR */
-}
-
-.ej9 {
-    border-style: none;
-    background-size: unset; /* ELIMINA EL VALOR APLICADO */
-}
-
-.ej10 {
-    border-style: hidden;
-    background-size: initial; /* VALOR INICIAL DE LA PROPIEDAD */
-}
-
-/* Mantengo tus otros estilos de borde abajo */
-.ej11 {
-    border-style: solid inset groove dashed;
-}
-
-.ej12 {
-    border: solid firebrick;
-    border-width: 25px 5px 10px 12px;
-}
-
-.Fondo_Natural {
-    border: #03ff2d 5px solid;
-    border-radius: 15px;
-    background-image: url(./src/visual/Fondo\ Natural.jpg);
-    background-size: auto;
-}
-
-.cuyito {
-    background-image: url(./src/visual/cuyito.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 400px;
-    position: relative;
-    z-index: 2;
-}
-.pastito {
-    background-image: url(./src/visual/pastito.png);
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-position: center bottom;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    z-index: 1;
-}
 /* ================================================================
    CONTENEDORES DE TABLAS - ALINEACIÓN HORIZONTAL (Sin Flex)
    ================================================================ */
@@ -212,12 +123,12 @@ td img {
 
 /* TABLA 1: AMARILLA */
 .tabla-amarilla thead {
-    background-color: #fdca00;
+    background-color: #ffcc00;
     color: #2c3e50;
 }
 
 .tabla-amarilla tr {
-    background-color: #fff9e6;
+    background-color: #ffcc00;
 }
 
 /* TABLA 2: AZUL */
@@ -227,17 +138,17 @@ td img {
 }
 
 .tabla-azul tr {
-    background-color: #ebf3fb;
+    background-color: #00538a;
 }
 
 /* TABLA 3: ROJA */
 .tabla-roja thead {
-    background-color: #e74c3c;
+    background-color: red;
     color: white;
 }
 
 .tabla-roja tr {
-    background-color: #fdf2f2;
+    background-color: red;
 }
 
 /* ================================================================
@@ -275,4 +186,266 @@ footer {
     .container { padding: 15px; }
     table { max-width: 100%; }
     td img { width: 45px; height: 45px; }
+}
+.ej1 {
+    border-style: solid;
+    border-color: #0859ab rgb(246, 9, 9) rgb(252, 181, 2);
+    border-radius: 100px 5px;
+    background-size: cover; /* CUBRE TODO EL ESPACIO */
+    background-color: linear-gradient(#00f8f8, #1500f8, #fefefeea);
+}
+
+.ej2 {
+    border-style: dotted;
+    border-radius: 50px;
+    background-size: contain; /* SE VE TODA LA IMAGEN */
+    background-color: #00f8f852;
+}
+
+.ej3 {
+    border-style: dashed;
+    background-size: auto; /* TAMAÑO ORIGINAL (MUY GRANDE) */
+    background-color: #00f8f852;
+}
+
+.ej4 {
+    border-style: double;
+    background-position: center; /* CENTRADO */
+    background-size: auto; 
+    background-color: #00f8f852;
+}
+
+.ej5 {
+    border-style: groove;
+    background-size: 50px; /* TAMAÑO FIJO EN PIXELES */
+    background-color: #00f8f852;
+
+}
+
+.ej6 {
+    border-style: ridge;
+    background-size: 15%; /* EL 15% DEL ANCHO DEL H2 */
+    background-color: #00f8f852;
+}
+
+.ej7 {
+    border-style: inset;
+    background-size: inherit; /* HEREDA DEL CONTENEDOR PADRE, pero en este caso, él es el contenedor padre : */
+    background-color: #00f8f852;
+}
+
+.ej8 {
+    border-style: outset;
+    background-size: revert; /* VUELVE AL VALOR DEL NAVEGADOR */
+    background-color: #00f8f852;
+}
+
+.ej9 {
+    border-style: none;
+    background-size: unset; /* ELIMINA EL VALOR APLICADO */
+    background-color: #00f8f852;
+}
+
+.ej10 {
+    border-style: hidden;
+    background-size: initial; /* VALOR INICIAL DE LA PROPIEDAD */
+    background-color: #00f8f852;
+}
+
+/* Mantengo tus otros estilos de borde abajo */
+.ej11 {
+    border-style: solid inset groove dashed;
+    background-color: #00f8f852;
+}
+
+.ej12 {
+    border: solid firebrick;
+    border-width: 25px 5px 10px 12px;
+    background-color: #00f8f852;
+}
+
+.Fondo_Natural {
+    border: #03ff2d 5px solid;
+    border-radius: 15px;
+    background-image: url(./src/visual/Fondo\ Natural.jpg);
+    background-size: auto;
+}
+
+.cuyito {
+    background-image: url(./src/visual/cuyito.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+}
+.pastito {
+    background-image: url(./src/visual/pastito.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    z-index: 1;
+}
+
+.newObject-1 {
+    max-width: 600px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 81px;
+    border: 8px solid black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    background: linear-gradient(-135deg, rgb(31, 1, 255), rgb(255, 255, 255), rgb(255, 0, 0));
+}
+
+.newObject-2 {
+    max-width: 600px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 81px;
+    border: 8px solid black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    background: radial-gradient(
+        closest-side, 
+        red,
+        rgb(92, 1, 106),
+        rgb(255, 185, 55)
+        );
+}
+
+.newObject-3 {
+    max-width: 600px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 81px;
+    border: 8px solid black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    background: radial-gradient(
+        closest-corner, 
+        red,
+        rgb(92, 1, 106),
+        rgb(255, 185, 55)
+        );
+}
+
+.newObject-4 {
+    max-width: 600px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 81px;
+    border: 8px solid black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    background: radial-gradient(
+        farthest-side, 
+        red,
+        rgb(92, 1, 106),
+        rgb(255, 185, 55)
+        );
+}
+
+.newObject-5 {
+    max-width: 600px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 81px;
+    border: 8px solid black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    background: radial-gradient(
+        farthest-corner, 
+        red,
+        rgb(92, 1, 106),
+        rgb(255, 185, 55)
+        );
+}
+
+.newObject-6 {
+    max-width: 600px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 81px;
+    border: 8px solid black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    background-image: repeating-radial-gradient(red, blue 10%);
+}
+
+.newObject-7 {
+    max-width: 600px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 81px;
+    border: 8px solid black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    background: conic-gradient(#1f005c, #5b0060,#870160,#ac255e,#ca450c)
+}
+
+.newObject-8 { /*Un atardecer en el mar*/
+    max-width: 600px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 81px;
+    border: 8px solid black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    /* Multiple gradients are comma-separated. Order: top-most first */
+    background: linear-gradient( /*ARENA*/
+                    -180deg, 
+                    transparent 82%,
+                    rgb(248, 213, 114) 10%,
+                    rgb(77, 63, 1) 
+                    ),
+
+                linear-gradient( /*CIELO ROJIZO A LOS LADOS*/
+                    90deg, 
+                    rgba(250, 2, 2, 0.154), 
+                    transparent, 
+                    rgba(250, 2, 2, 0.154)),
+
+                linear-gradient( /*Reflejo del sol*/
+                    to bottom,
+
+                    transparent 0%,
+                    transparent 50%,
+
+                    rgba(255,255,220,0.35) 51%,
+                    rgba(255,255,220,0.12) 58%,
+
+                    transparent 68%
+                    ),
+
+                linear-gradient( /*MAR*/
+                    -180deg, 
+                    transparent 50%,
+                    rgb(0, 78, 222) 50%, 
+                    rgb(3, 167, 255) 70%
+                    ), 
+
+                radial-gradient( /*SOL CRUEL*/
+                    circle at 50% 50%,
+
+                    white 18%, 
+                    rgb(251, 251, 152) 20%, 
+                    rgb(255, 191, 0) 60%
+                    );
+                
 }
